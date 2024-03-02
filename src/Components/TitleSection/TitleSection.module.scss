@@ -1,0 +1,43 @@
+@import '@/styles/theme.scss';
+
+.titlesection {
+    text-align: center;
+    &.white {
+        background: $primary;
+        .subtitle {
+            color: $resalt;
+        }
+        .title {
+            color: white;
+        }
+    }
+    .subtitle {
+        font-family: var(--font-rubik);
+        color: var(--color-text-body);
+        font-size: 16px;
+        line-height: 30px;
+        @include media-up( md ) {
+            font-size: 24px;
+
+        }
+    }
+    .title {
+        margin: 0;
+        font-family: var(--font-rubik);
+        font-size: 2.3rem;
+        line-height: 2.3rem;
+        letter-spacing: -3px;
+        padding-bottom: 20px;
+        color: var(--color-text-title);
+        @include media-up( md ) {
+            margin-top: 10px;
+            font-size: 3rem;
+            padding-bottom: 40px;
+        }
+        strong {
+            position: relative;
+            font-weight: inherit;
+            color: var(--color-primary);
+        }
+    }
+}
