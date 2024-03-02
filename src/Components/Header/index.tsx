@@ -57,6 +57,18 @@ const Header:FC<Props> = () => {
   return (
 
     <header>
+        <div className={styles.contact}>
+            <Link href={'/'} aria-label='Inicio Mundo Imagen'>
+                <Image alt='' priority src={'/logo-kort.png'} width={86} height={50}/>
+            </Link>
+            <Link href={'/'}>hola@agenciakbk.com</Link>
+            <Link href={'/'}>Ventas: +57 300 000 00 00</Link>
+            <Link href={'/'}>Medellín, Antioquia</Link>
+            <Link href={'/'}>
+                <button>Pedir Cotización</button>
+            </Link>
+        </div>
+        
         <nav 
             id="menu"
             className={`${styles.menu}`}
@@ -494,6 +506,7 @@ const Header:FC<Props> = () => {
                 </div>
             </div>
         </nav>
+
         <div onClick={ toggleCart } className={ styles.cart }>
             <CartIcon width={30} fill='#fff'/>
         </div>

@@ -15,15 +15,21 @@
 	}
 }
 
+
+.contact {
+	max-width: 1280px;
+	margin: auto;
+	display: flex;
+	gap: 5rem;
+}
+
 /* ------------------------- */
 /* Enlaces del NAV */
 /* ------------------------- */
 .menu {
     background-color: $light;
-    top: 0;
 	padding: 5px 0;
 	margin-bottom: 20px;
-    position: fixed;
     width: 100%;
     z-index: 1000;
 	box-shadow: 2px 2px 6px rgba( 0,0,0,.6 );
@@ -191,11 +197,11 @@
 
 
 .grid {
+	z-index: 99;
 	width: 100%;
 	opacity: 0;
 	height: 0;
 	overflow: hidden;
-	
 	display: grid;
 	position: absolute;
 	top: 5px;
@@ -321,6 +327,7 @@
 /* ------------------------- */
 
 .grid .contenedor-subcategorias {
+	z-index: 99;
 	grid-area: subcategorias;
 	@include media-down( 1048 ) {
 		position: absolute;
