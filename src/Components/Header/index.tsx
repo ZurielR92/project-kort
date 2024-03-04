@@ -56,36 +56,55 @@ const Header:FC<Props> = () => {
 
   return (
 
-    <header>
+    <header className={styles.header}>
         <div className={styles.contact}>
             <Link href={'/'} aria-label='Inicio Mundo Imagen'>
                 <Image alt='' priority src={'/logo-kort.png'} width={86} height={50}/>
             </Link>
-            <Link href={'/'}>hola@agenciakbk.com</Link>
-            <Link href={'/'}>Ventas: +57 300 000 00 00</Link>
-            <Link href={'/'}>Medellín, Antioquia</Link>
+
             <Link href={'/'}>
-                <button>Pedir Cotización</button>
+                <button>
+                    <Image src={'/icons/email-icon.png'} width={39} height={25} alt='Email icon'/>
+                    <div>
+                        <small>Correo Electrónico</small>
+                        <strong>hola@agenciakbk.com</strong>
+                    </div>
+                </button>
+            </Link>
+
+            <Link href={'/'}>
+                <button>
+                    <Image src={'/icons/phone-icon.png'} width={27} height={25} alt='Email icon'/>
+                    <div>
+                        <small>Teléfono</small>
+                        <strong>+57 300 00 00</strong>
+                    </div>
+                </button>
+            </Link>
+
+            <Link href={'/'}>
+                <button>
+                    <Image src={'/icons/location-icon.png'} width={22} height={25} alt='Email icon'/>
+                    <div>
+                        <small>Dirección</small>
+                        <strong>Medellín, Antioquia</strong>
+                    </div>
+                </button>
+            </Link>
+
+            <Link href={'/'}>
+                <button className={styles.ws}>
+                    <Image src={'/icons/ws-icon.png'} width={25} height={25} alt='Whatsapp Icon'/>
+                    Pedir Cotización
+                </button>
             </Link>
         </div>
         
-        <nav 
-            id="menu"
-            className={`${styles.menu}`}
-        >
+        <nav id="menu" className={`${styles.menu}`}>
 
             <div className={`${styles['contenedor']} ${styles['contenedor-botones-menu']}`}>
-                
-
-
-                <Image alt='' priority src={'/logo-kort.png'} width={68} height={40}/>
-
-
-
                 <ButtonMenuAnimated active={ isShowMenu } onClick={ () => handleToggleMenu() }/>
             </div>
-
-
 
 
             <div onClick={ isShowCart ? () => toggleCart() : () => handleToggleMenu() } className={ `${ styles.background } ${ showBacking() && styles.activo }` }></div>
@@ -93,14 +112,8 @@ const Header:FC<Props> = () => {
 
 
 
-            <div 
-                className={`${styles["contenedor"]} ${styles['contenedor-enlaces-nav']} ${ isShowMenu && styles.activo }`}>
+            <div className={`${styles["contenedor"]} ${styles['contenedor-enlaces-nav']} ${ isShowMenu && styles.activo }`}>
 
-                <div className={styles['contenedor-logo']}>
-                    <Link href={'/'} aria-label='Inicio Mundo Imagen'>
-                        <Image alt='' priority src={'/logo-kort.png'} width={86} height={50}/>
-                    </Link>
-                </div>
 
                 <div 
                     onClick={ showServices }
@@ -113,11 +126,13 @@ const Header:FC<Props> = () => {
 
 
                 <ul className={`${styles.enlaces}`}>
+
                     <li>
                         <Link onClick={ handleToggleMenu } href={'/'}>
                                 Inicio
                         </Link>
                     </li>
+                    
                     <li className={ styles.separador_links }>
                         <span></span>
                     </li>

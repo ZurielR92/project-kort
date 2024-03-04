@@ -26,7 +26,6 @@ const WelcomeSection: React.FC<WelcomeSectionProps>  = ({
 }) => {
 	return (
 		<section className={styles.welcomesection}>
-			<CurveSVG className={styles.svg}/>
 
 			<div className={styles.container}>
 				<motion.div 

@@ -1,11 +1,15 @@
 @import '@/styles/theme.scss';
 
+
+.header {
+}
+
 .contenedor {
 	font-family: var(--font-rubik);
 	margin: auto;
 	width: 90%;
 	max-width: 1200px;
-
+	
 	@include media-down( 1330 ) {
 		width: 100%;
 	}
@@ -21,6 +25,44 @@
 	margin: auto;
 	display: flex;
 	gap: 5rem;
+	align-items: center;
+	justify-content: space-between;
+	padding-top: 1rem;
+	padding-bottom: .5rem;
+	button {
+		display: flex;
+		background: none;
+		border: none;
+		cursor: pointer;
+		gap: .3rem;
+		align-items: center;
+		>div {
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			small {
+				color: var(--color-text-title);
+			}
+			strong {
+				font-size: 1.1rem;
+				color: var(--color-text-body);
+			}
+		}
+	}
+	.ws {
+		background: var(--color-primary);
+		padding: .7rem;
+		color: white;
+		font-size: 1.1rem;
+		font-weight: 600;
+		display: flex;
+		align-items: center;
+		border-radius: .5rem;
+		transition: all .2s ease-in-out;
+		&:hover {
+			background: var(--color-primary-dark);
+		}
+	}
 }
 
 /* ------------------------- */
@@ -28,18 +70,22 @@
 /* ------------------------- */
 .menu {
     background-color: $light;
+	background: var(--color-primary-dark);
+	max-width: 1280px;
+	margin: auto;
+	border-radius: .5rem;
+	margin-bottom: -31.5px;
 	padding: 5px 0;
-	margin-bottom: 20px;
     width: 100%;
-    z-index: 1000;
-	box-shadow: 2px 2px 6px rgba( 0,0,0,.6 );
+	box-shadow: 2px 2px 6px rgba( 0,0,0,.6 );	
 }
 
 
 
 .menu .contenedor-botones-menu {
 	display: none;
-	justify-content: space-between;
+	justify-content: flex-end;
+
 	@include media-down( 1048 ) {
 		display: flex;
 	}
@@ -126,6 +172,8 @@
 			transform: translate(0%);
 		}
 	}
+
+	
 	.contenedor-logo {
 		@include media-down( 1048 ){
 			display: flex;
@@ -135,6 +183,8 @@
 			margin-bottom: 20px;
 		}
 	}
+
+
 	.enlaces {
 		display: flex;
 		list-style: none;

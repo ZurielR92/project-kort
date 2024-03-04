@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { Rubik, Pacifico } from 'next/font/google'
+import { Rubik, Pacifico, Raleway } from 'next/font/google'
 import '@/styles/globals.scss'
 import { ContextWrapper } from '@/context'
 import { Footer } from '@/Components/Footer'
@@ -8,7 +8,7 @@ import { CartMenu } from '@/Components/CartMenu'
 import Header from '@/Components/Header'
 import Script from 'next/script'
 
-const rubik = Rubik({
+const rubik = Raleway({
   subsets:['latin'],
   display:'swap',
   variable: '--font-rubik'
