@@ -1,6 +1,6 @@
 'use client'
 
-import { FC, useContext, useEffect, useRef } from 'react'
+import { FC, useContext, useEffect, useRef, useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import styles from './Header.module.scss'
@@ -9,12 +9,19 @@ import { IconsSocial } from '../IconsSocial'
 import { CartIcon, SimpleDownArrow } from '../MaterialZ/Icons'
 import { ButtonMenuAnimated } from '../MaterialZ'
 import UIContext from '@/context/UI/UIContext'
+import { motion, useMotionValueEvent, useScroll } from 'framer-motion'
 
 interface Props {
 
 }
 
 const Header:FC<Props> = () => {
+
+    const [position, setPosition] = useState(0);
+	const { scrollY } = useScroll();
+	useMotionValueEvent(scrollY, 'change', (latest)=>{
+		setPosition(latest)
+	})
 
     const innerWidth = (typeof window === 'undefined') ? 0 : window.innerWidth;
     const esDispositivoMovil = () => innerWidth <= 1048;
@@ -42,6 +49,8 @@ const Header:FC<Props> = () => {
         logic.initEvents(grid, contenedorSubCategorias);
     }, [])
 
+
+
     const showBacking = () => {
         if ( isShowMenu && esDispositivoMovil() ) {
             return true
@@ -57,50 +66,78 @@ const Header:FC<Props> = () => {
   return (
 
     <header className={styles.header}>
-        <div className={styles.contact}>
-            <Link href={'/'} aria-label='Inicio Mundo Imagen'>
-                <Image alt='' priority src={'/logo-kort.png'} width={86} height={50}/>
-            </Link>
+        <motion.div
+            className={styles.contact}
+        >
+            <motion.div
+                initial={{y:-30, opacity:0}}
+                animate={{y:0, opacity:1}}
+            >
+                <Link href={'/'} aria-label='Inicio Agencia Kubica'>
+                    <Image alt='' priority src={'/logo-kort.png'} width={86} height={50}/>
+                </Link>
+            </motion.div>
 
             <Link href={'/'}>
-                <button>
+                <motion.button
+                    tabIndex={-1}
+                    initial={{y:-30, opacity:0}}
+                    animate={{y:0, opacity:1}}
+                    transition={{delay:.1}}
+                >
                     <Image src={'/icons/email-icon.png'} width={39} height={25} alt='Email icon'/>
                     <div>
                         <small>Correo Electrónico</small>
                         <strong>hola@agenciakbk.com</strong>
                     </div>
-                </button>
+                </motion.button>
             </Link>
 
             <Link href={'/'}>
-                <button>
+                <motion.button
+                    tabIndex={-1}
+                    initial={{y:-30, opacity:0}}
+                    animate={{y:0, opacity:1}}
+                    transition={{delay:.2}}
+                >
                     <Image src={'/icons/phone-icon.png'} width={27} height={25} alt='Email icon'/>
                     <div>
                         <small>Teléfono</small>
                         <strong>+57 300 00 00</strong>
                     </div>
-                </button>
+                </motion.button>
             </Link>
 
             <Link href={'/'}>
-                <button>
+                <motion.button
+                    tabIndex={-1}
+                    initial={{y:-30, opacity:0}}
+                    animate={{y:0, opacity:1}}
+                    transition={{delay:.3}}
+                >
                     <Image src={'/icons/location-icon.png'} width={22} height={25} alt='Email icon'/>
                     <div>
                         <small>Dirección</small>
                         <strong>Medellín, Antioquia</strong>
                     </div>
-                </button>
+                </motion.button>
             </Link>
 
             <Link href={'/'}>
-                <button className={styles.ws}>
+                <motion.button 
+                    tabIndex={-1}
+                    initial={{y:-30, opacity:0}}
+                    animate={{y:0, opacity:1}}
+                    transition={{delay:.4}}
+                    className={styles.ws}
+                >
                     <Image src={'/icons/ws-icon.png'} width={25} height={25} alt='Whatsapp Icon'/>
                     Pedir Cotización
-                </button>
+                </motion.button>
             </Link>
-        </div>
+        </motion.div>
         
-        <nav id="menu" className={`${styles.menu}`}>
+        <nav id="menu" className={`${styles.menu} ${ position > (141.51 - 63) - 16 ? styles.active : '' }`}>
 
             <div className={`${styles['contenedor']} ${styles['contenedor-botones-menu']}`}>
                 <ButtonMenuAnimated active={ isShowMenu } onClick={ () => handleToggleMenu() }/>
@@ -133,30 +170,25 @@ const Header:FC<Props> = () => {
                         </Link>
                     </li>
                     
-                    <li className={ styles.separador_links }>
-                        <span></span>
-                    </li>
-
-
                     <li className={ styles.desktop }>
                         <span onMouseEnter={ showServices }>
                             Servicios
-                            <SimpleDownArrow style={{ marginLeft:'5px' }} width={ 10 }/>
+                            <SimpleDownArrow fill='white' style={{ marginLeft:'5px' }} width={ 10 }/>
                         </span>
                     </li>
-
-
-                    <li className={ styles.separador_links }>
-                        <span></span>
-                    </li>
+                    
                     <li>
                         <Link onClick={ handleToggleMenu } href={'/conocenos'}>
                             Conócenos
                         </Link>
                     </li>
-                    <li className={ styles.separador_links }>
-                        <span></span>
+                    
+                    <li>
+                        <Link onClick={ handleToggleMenu } href={'/preguntas-frecuentess'}>
+                            FAQs
+                        </Link>
                     </li>
+
                     <li>
                         <Link onClick={ handleToggleMenu } href={'/contacto'}>
                             Contacto
