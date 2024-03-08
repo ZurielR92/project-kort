@@ -97,7 +97,11 @@ const WelcomeSection: React.FC<WelcomeSectionProps>  = ({
 						delay:.1
 					}}
 				>
+
+
 					<Image priority src={urlImage} width={500} height={435} alt={altImage}/>
+
+
 				</motion.div>
 			</div>
 

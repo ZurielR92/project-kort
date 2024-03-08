@@ -7,6 +7,7 @@ import { Services } from './components/Services';
 import { WelcomeSection } from '@/Components/WelcomeSection';
 import { CustomersSection } from '@/Components/CustomersSection';
 import { CategoriesGrid } from '@/Components/CategoriesGrid';
+import { AboutUs } from '@/Components/AboutUs';
 
 
 const getCategories = async () => {
@@ -44,6 +45,7 @@ const HomePage = async ({ searchParams }:Props) => {
         urlImage='/welcome-home.png'
       />
       <CustomersSection/>
+      <AboutUs/>
       <CategoriesGrid categories={categories}/>
       <Services/>
     </main>
