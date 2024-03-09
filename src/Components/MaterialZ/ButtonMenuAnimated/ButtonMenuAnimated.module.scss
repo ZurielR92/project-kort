@@ -2,7 +2,8 @@
 
 
 .buttonmenuanimated{
-    margin-top: 9px;
+    margin-top: 5px;
+    margin-bottom: 5px;
     margin-right: -8px;
     z-index: 99999;
     display:flex;
@@ -11,7 +12,7 @@
      cursor:pointer;
 
      span{
-       background: $textLight;
+       background: white;
        border-radius:10px;
        height:4px;
        margin: 3px 0;

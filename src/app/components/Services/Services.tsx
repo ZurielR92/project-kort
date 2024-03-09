@@ -10,7 +10,7 @@ const Services = () => {
         <Section colorClipTop='resalt' colorClipBottom='primary' style={{paddingBottom:100, paddingTop:100}}>
             <TitleSection title={<>Nuestros <strong>Servicios</strong></>} subtitle='Soluciones impresionantes para Tu Empresa'/>
             <p className={styles.text}>
-                En Grupo Mundo Imagen ofrecemos una amplia gama de servicios de litografía y publicidad para satisfacer tus necesidades comerciales. Ya sea que necesites impresión de alta calidad, diseño gráfico creativo o estrategias publicitarias efectivas, estamos aquí para ofrecerte servicios excepcionales que impulsarán tu marca y harán que tu negocio destaque en Medellín y más allá. Descubre cómo nuestros servicios pueden ayudarte a alcanzar tus objetivos comerciales.
+                En Grupo Kúbica Agencia ofrecemos una amplia gama de servicios de litografía y publicidad para satisfacer tus necesidades comerciales. Ya sea que necesites impresión de alta calidad, diseño gráfico creativo o estrategias publicitarias efectivas, estamos aquí para ofrecerte servicios excepcionales que impulsarán tu marca y harán que tu negocio destaque en Medellín y más allá. Descubre cómo nuestros servicios pueden ayudarte a alcanzar tus objetivos comerciales.
             </p>
             <div className={styles.grid}>
                 <div className={styles.service}>

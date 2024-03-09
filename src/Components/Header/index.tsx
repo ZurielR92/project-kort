@@ -139,7 +139,12 @@ const Header:FC<Props> = () => {
         
         <nav id="menu" className={`${styles.menu} ${ position > (141.51 - 63) - 16 ? styles.active : '' }`}>
 
+
+
             <div className={`${styles['contenedor']} ${styles['contenedor-botones-menu']}`}>
+                <Link href={'/'} className={styles.logomobile}>
+                    <Image src={'/logo-kbk-dark.png'} width={63} height={30} alt='Logo Kbk'/>
+                </Link>
                 <ButtonMenuAnimated active={ isShowMenu } onClick={ () => handleToggleMenu() }/>
             </div>
 
@@ -183,11 +188,11 @@ const Header:FC<Props> = () => {
                         </Link>
                     </li>
                     
-                    <li>
+{/*                     <li>
                         <Link onClick={ handleToggleMenu } href={'/preguntas-frecuentess'}>
                             FAQs
                         </Link>
-                    </li>
+                    </li> */}
 
                     <li>
                         <Link onClick={ handleToggleMenu } href={'/contacto'}>

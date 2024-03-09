@@ -23,11 +23,10 @@
     margin: auto;
     margin-top: 30px;
     > div {
-        border-radius: 10px;
         h2 {
             color: white;
             padding: 10px;
-            background: $primary;
+            background: var(--color-primary);
             text-align: center;
             clip-path: polygon(0 0, 95% 4%, 100% 100%, 4% 96%);
         }
@@ -54,10 +53,27 @@
                     height: 10px;
                     border-width: 0 2px 2px 0;
                     border-style: solid;
-                    color: $resalt;
+                    color: var(--color-primary);
                     transform-origin: bottom left;
                     transform: rotate(45deg)
                 }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .text {
+        padding: 0 1rem;
+    }
+    .grid {
+        padding: 0 1rem;
+        grid-template-columns: 1fr 1fr;
+        gap: .8rem;
+        >div {
+            h2 {
+                font-size: 1.2rem;
+                padding: .5rem;
             }
         }
     }

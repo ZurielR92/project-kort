@@ -17,7 +17,7 @@ export const Footer:FC<Props> = () => {
 
             <div className={ styles.grid } >
                 <div>
-                    <Image alt='' priority src={'/logo-kort.png'} width={86} height={50}/>   
+                    <Image alt='' priority src={'/logo-kbk-dark.png'} width={140} height={70}/>   
                     <p>
                         Nuestra Agencia, ubicada en la Ciudad de Medellín, cuenta con el talento humano, tecnología y experiencia para afrontar los retos que propongan nuestros clientes y poder satisfacer todas sus necesidades en materia de artes gráficas.
                     </p>
