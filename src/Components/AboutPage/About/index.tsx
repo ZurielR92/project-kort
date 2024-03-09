@@ -22,7 +22,7 @@ export const About:FC<Props> = () => {
                 </div>
 
                 <div>
-                    <TitleSection title='Nuestra Empresa' subtitle='Somos Grupo Mundo Imagen'/>
+                    <TitleSection title='Nuestra Empresa' subtitle='Somos Kúbica Agencia'/>
                     <p>
                         En primer lugar aquí podrá imprimir todo lo que necesita para su empresa. Garantizamos su comodidad en entregas rápidas y precios para todos los bolsillos. Como resultado nuestro compromiso como imprenta es entregar la más alta calidad en impresión, uno de los principales argumentos son precio y calidad y nos encontramos ubicados en el en el barrio patronato de recoleta donde podrá ver todo los productos.
                     </p>

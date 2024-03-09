@@ -25,7 +25,7 @@ export const ChatWidget:FC<Props> = ({ active, onClick }) => {
     const handleSendMessage = () => {
         // @ts-ignore
         gtag_report_conversion();
-        const url = `https://api.whatsapp.com/send?phone=57${vendor}&text=Hola!%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20sus%20servicios."`
+        const url = `https://api.whatsapp.com/send?phone=57${vendor}&text=Hola!%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20sus%20servicios.`
         const win = window.open(url, '_blank');
         win?.focus();
         setAct(!act)
@@ -37,10 +37,10 @@ export const ChatWidget:FC<Props> = ({ active, onClick }) => {
             <div className={ `${ styles.chat } ${ act && styles.active}` }>
                 <div className={ styles.header }>
                     <div className={ styles.avatar }>
-                        <Image src={ '/icon_mundo_imagen.jpg' } width={ 52 } height={ 52 } alt='Mundo Imagen' />
+                        <Image src={ '/favicon.png' } width={ 52 } height={ 52 } alt='Mundo Imagen' />
                     </div>
                     <div className={ styles.texto }>
-                        <div className={ styles.nombre }>Mundo Imagen</div>
+                        <div className={ styles.nombre }>Kúbica Medellín</div>
                         <div className={ styles.estado }>¡Damos vida a tus ideas!</div>
                     </div>
                     <div onClick={ handleToogleActivate } className={ styles.close }>x</div>

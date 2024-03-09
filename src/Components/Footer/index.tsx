@@ -17,9 +17,9 @@ export const Footer:FC<Props> = () => {
 
             <div className={ styles.grid } >
                 <div>
-                    <Image alt='' priority src={'/logo_mundo_imagen_light.png'} width={250} height={56}/>   
+                    <Image alt='' priority src={'/logo-kort.png'} width={86} height={50}/>   
                     <p>
-                        Nuestra Litografía, ubicada en la Ciudad de Medellín, cuenta con el talento humano, tecnología y experiencia para afrontar los retos que propongan nuestros clientes y poder satisfacer todas sus necesidades en materia de artes gráficas.
+                        Nuestra Agencia, ubicada en la Ciudad de Medellín, cuenta con el talento humano, tecnología y experiencia para afrontar los retos que propongan nuestros clientes y poder satisfacer todas sus necesidades en materia de artes gráficas.
                     </p>
                 </div>
                 <nav>
@@ -54,7 +54,7 @@ export const Footer:FC<Props> = () => {
                 </div>
             </div>
             <div className={ styles.copyright }>
-                Copyright 2023 | Desarrollado y Posicionado por Grupo VR
+                Copyright 2023 | Desarrollado y Posicionado por Kúbica Agencia
             </div>
 
         </div>

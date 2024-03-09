@@ -1062,7 +1062,7 @@ export const categoriesList: ICategory[] = [
         basicPrice: 25000,
         minQuantity: 5,
         url: '/servicios/publicidad_exterior/avisos_neonflex',
-        displayImage: '/img/products/publicidad_exterior.jpg',
+        displayImage: '/img/products/publicidad_exterior/neonflex_sencillo.jpg',
         altDisplay: 'Avisos neonflex en santiago',
         gallery: [''],
         products: [

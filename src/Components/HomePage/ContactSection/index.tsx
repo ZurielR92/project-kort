@@ -36,11 +36,11 @@ export const ContactSection:FC<Props> = () => {
                         <span>Información de contacto</span>
                         <h2>Detalles</h2>
                         <strong>Dirección:</strong>
-                        <p>Carrera 45 # 30 - 45</p>
+                        <p>Carrera 53 # 3 Sur - 89 Local 04 Mall el Rodeo</p>
                         <strong>Teléfono:</strong>
                         <p>+57 {vendor}</p>
                         <strong>Correo Electrónico</strong>
-                        <p>ventas@mundo-imagen.com</p>
+                        <p>medellin@agenciakbk.com</p>
                     </div>
 
                 </div>

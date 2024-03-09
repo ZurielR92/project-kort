@@ -12,7 +12,7 @@ import { AboutUs } from '@/Components/AboutUs';
 
 const getCategories = async () => {
   const listaCategorias: ICategory[] = [];
-  const codigos: string[] = [ '0701','0205','0108','0705','0203', '0105', '0501','0404', '0405', '0505',  ];
+  const codigos: string[] = [ '0401','0406','0504','0501','0503', '0505', '0506','0405', '0604', '0603',  ];
 
   for (let p = 0; p < 12; p++) {
     categoriesList.find((obj, i) => {
@@ -37,15 +37,16 @@ const HomePage = async ({ searchParams }:Props) => {
       <WelcomeSection
         title={<>
           Gran Formato,
-          Litografía, <br />
-          Corte Laser y Promocionales <br />
-          en la Ciudad de Medellín
+          Corte Laser,
+          Impresión Digital,
+          y Promocionales
+          en Medellín
         </>}
         description={<>Ofrecemos servicios especializados, soluciones estratégicas y una metodología de trabajo integral que potenciará aún más tu negocio.</>}
         urlImage='/welcome-home.png'
       />
       <CustomersSection/>
-      <AboutUs/>
+      {/* <AboutUs/> */}
       <CategoriesGrid categories={categories}/>
       <Services/>
     </main>

@@ -78,7 +78,7 @@ const Header:FC<Props> = () => {
                 </Link>
             </motion.div>
 
-            <Link href={'/'}>
+            <Link href={'mailto:medellin@agenciakbk.com'}>
                 <motion.button
                     tabIndex={-1}
                     initial={{y:-30, opacity:0}}
@@ -88,12 +88,12 @@ const Header:FC<Props> = () => {
                     <Image src={'/icons/email-icon.png'} width={39} height={25} alt='Email icon'/>
                     <div>
                         <small>Correo Electrónico</small>
-                        <strong>hola@agenciakbk.com</strong>
+                        <strong>medellin@agenciakbk.com</strong>
                     </div>
                 </motion.button>
             </Link>
 
-            <Link href={'/'}>
+            <Link target='_blank' href={ `https://api.whatsapp.com/send?phone=573187458482&text=Hola!%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20sus%20servicios.`}>
                 <motion.button
                     tabIndex={-1}
                     initial={{y:-30, opacity:0}}
@@ -103,7 +103,7 @@ const Header:FC<Props> = () => {
                     <Image src={'/icons/phone-icon.png'} width={27} height={25} alt='Email icon'/>
                     <div>
                         <small>Teléfono</small>
-                        <strong>+57 300 00 00</strong>
+                        <strong style={{whiteSpace:'nowrap'}}>+57 318 745 84 82</strong>
                     </div>
                 </motion.button>
             </Link>
@@ -117,19 +117,19 @@ const Header:FC<Props> = () => {
                 >
                     <Image src={'/icons/location-icon.png'} width={22} height={25} alt='Email icon'/>
                     <div>
-                        <small>Dirección</small>
-                        <strong>Medellín, Antioquia</strong>
+                        <strong style={{fontSize:'1rem', textAlign:'left'}}>Cra 52 # 3 Sur 89, Local 04 Mall El Rodeo</strong>
                     </div>
                 </motion.button>
             </Link>
 
-            <Link href={'/'}>
+            <Link target='_blank' href={ `https://api.whatsapp.com/send?phone=573187458482&text=Hola!%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20sus%20servicios.`}>
                 <motion.button 
                     tabIndex={-1}
                     initial={{y:-30, opacity:0}}
                     animate={{y:0, opacity:1}}
                     transition={{delay:.4}}
                     className={styles.ws}
+                    style={{whiteSpace:'nowrap'}}
                 >
                     <Image src={'/icons/ws-icon.png'} width={25} height={25} alt='Whatsapp Icon'/>
                     Pedir Cotización
@@ -222,12 +222,12 @@ const Header:FC<Props> = () => {
                                     Categorias
                             </h3>
 
-                            <span data-categoria='1'>Publicidad Impresa <i className="fas fa-angle-right"></i></span>
-                            <span data-categoria='2'>Papelería Comercial <i className="fas fa-angle-right"></i></span>
-                            {/* <span data-categoria='3'>Impresión Laser <i className="fas fa-angle-right"></i></span> */}
                             <span data-categoria='4'>Publicidad Exterior <i className="fas fa-angle-right"></i></span>
                             <span data-categoria='5'>Gran Formato <i className="fas fa-angle-right"></i></span>
+                            <span data-categoria='3'>Impresión Laser <i className="fas fa-angle-right"></i></span>
                             <span data-categoria='6'>Promocionales <i className="fas fa-angle-right"></i></span>
+                            <span data-categoria='1'>Publicidad Impresa <i className="fas fa-angle-right"></i></span>
+                            <span data-categoria='2'>Papelería Comercial <i className="fas fa-angle-right"></i></span>
                             <span data-categoria='8'>Cajas y Empaques<i className="fas fa-angle-right"></i></span>
                             {/* <span data-categoria='9'>Eventos<i className="fas fa-angle-right"></i></span> */}
                             {/* <span data-categoria='7'>Diseño Gráfico <i className="fas fa-angle-right"></i></span> */}
@@ -403,7 +403,7 @@ const Header:FC<Props> = () => {
                                     <Link onClick={ handleToggleMenu } href={'/servicios/gran_formato/senalizacion'}>
                                             Señalización
                                     </Link>
-                                    <Link onClick={ handleToggleMenu } href={'/servicios/gran_formato/plotter_corte'}>
+                                    <Link onClick={ handleToggleMenu } href={'/servicios/gran_formato/plotter_de_corte'}>
                                             Plotter de Corte
                                     </Link>
                                 </div>
@@ -423,20 +423,20 @@ const Header:FC<Props> = () => {
                             <div className={`${styles.subcategoria} subcategoria`} data-categoria='6'>
                                 <div className={`${styles['enlaces-subcategoria']}`}>
                                     <button className={`${styles['btn-regresar']} btn-regresar`}><i className="fas fa-arrow-left"></i>Regresar</button>
-                                    <h3 className={`${styles.subtitulo}`}>Souvenirs Publicitarios</h3>
-                                    <Link onClick={ handleToggleMenu } href={'/servicios/souvenirs_publicitarios/lapiceros_personalizados'}>
+                                    <h3 className={`${styles.subtitulo}`}>Promocionales</h3>
+                                    <Link onClick={ handleToggleMenu } href={'/servicios/promocionales/lapiceros_personalizados'}>
                                             Lapiceros
                                     </Link>
-                                    <Link onClick={ handleToggleMenu } href={'/servicios/souvenirs_publicitarios/llaveros_personalizados'}>
+                                    <Link onClick={ handleToggleMenu } href={'/servicios/promocionales/llaveros_personalizados'}>
                                             Llaveros
                                     </Link>
-                                    <Link onClick={ handleToggleMenu } href={'/servicios/souvenirs_publicitarios/termos_personalizados'}>
+                                    <Link onClick={ handleToggleMenu } href={'/servicios/promocionales/termos_personalizados'}>
                                             Termos
                                     </Link>
-                                    <Link onClick={ handleToggleMenu } href={'/servicios/souvenirs_publicitarios/mugs_personalizados'}>
+                                    <Link onClick={ handleToggleMenu } href={'/servicios/promocionales/mugs_personalizados'}>
                                             Mugs
                                     </Link>
-                                    <Link onClick={ handleToggleMenu } href={'/servicios/souvenirs_publicitarios/camisetas_personalizadas'}>
+                                    <Link onClick={ handleToggleMenu } href={'/servicios/promocionales/camisetas_personalizadas'}>
                                             Camisetas
                                     </Link>
                                     {/* <Link href={'/servicios/souvenirs-publicitarios/gorras'}>
