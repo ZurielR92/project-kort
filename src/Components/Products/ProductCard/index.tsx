@@ -111,32 +111,46 @@ export const ProductCard:FC<Props> = ( { img, altImg, title, shortDescription, p
 
           ):(
             <div className={ styles['container-form'] } >
-
+{/* 
               <label htmlFor="#Quantity">Cantidad</label>
               <label htmlFor="#Quantity">Ancho</label>
-              <label htmlFor="#Quantity">Alto</label>
+              <label htmlFor="#Quantity">Alto</label> */}
 
+              <div className={styles.input}>
+                <label htmlFor={"Quantity"+title}>Cantidad</label>
+                <input
+                  onFocus={(e)=>e.target.select()}
+                  value={quantity}
+                  onChange={e => setQuantity(e.target.value) }
+                  type="number" 
+                  name="Quantity" 
+                  id={"Quantity"+title} 
+                />
+              </div>
+
+              <div className={styles.input}>
+                <label htmlFor={"width"+title}>Ancho</label>
+                <input 
+                  onFocus={(e)=>e.target.select()}
+                  value={width}
+                  onChange={handleChangeWidth}
+                  type="number" 
+                  name="" 
+                  id={"width"+title} 
+                />
+              </div>
+
+              <div className={styles.input}>
+                <label htmlFor={"height"+title}>Alto</label>
               <input 
-                value={quantity}
-                onChange={e => setQuantity(e.target.value) }
-                type="number" 
-                name="Quantity" 
-                id="Quantity" 
-              />
-              <input 
-                value={width}
-                onChange={handleChangeWidth}
-                type="number" 
-                name="" 
-                id="" 
-              />
-              <input 
+                onFocus={(e)=>e.target.select()}
                 value={height}
                 onChange={handleChangeHeight}
                 type="number" 
                 name="" 
-                id="" 
+                id={"height"+title} 
               />
+              </div>
             </div>
           )
         }

@@ -108,7 +108,7 @@ const Header:FC<Props> = () => {
                 </motion.button>
             </Link>
 
-            <Link href={'/'}>
+            <Link target='_blank' href={'https://maps.app.goo.gl/dH21hQYv7eWF7PM79'}>
                 <motion.button
                     tabIndex={-1}
                     initial={{y:-30, opacity:0}}
@@ -117,7 +117,7 @@ const Header:FC<Props> = () => {
                 >
                     <Image src={'/icons/location-icon.png'} width={22} height={25} alt='Email icon'/>
                     <div>
-                        <strong style={{fontSize:'1rem', textAlign:'left'}}>Cra 52 # 3 Sur 89, Local 04 Mall El Rodeo</strong>
+                        <strong style={{fontSize:'.85rem', textAlign:'left'}}>Cra 52 # 3 Sur 89, Local 04 Mall El Rodeo</strong>
                     </div>
                 </motion.button>
             </Link>
