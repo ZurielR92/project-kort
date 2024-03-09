@@ -48,7 +48,7 @@ export const ChatWidget:FC<Props> = ({ active, onClick }) => {
                 <div className={ styles.body }>
                     <div className={ styles.dentro }>
                         <div className={ styles.dialogo }>
-                            <div className={ styles.nombre }>Mundo Imagen</div>
+                            <div className={ styles.nombre }>Kúbica Agencia</div>
                             <div className={ styles.texto }>
                                 <p>¡Hola! 👋</p>
                                 <p>Bienvenido, cuentanos</p>
