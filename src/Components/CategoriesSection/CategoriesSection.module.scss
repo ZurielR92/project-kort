@@ -52,18 +52,37 @@
         img {
         }
     }
-    &.right {
-        &>:nth-child(2) {
-            grid-column: 1;
-            grid-row: 1;
-        }
-        .title {
-            grid-column: 2/ span 2;
-            text-align: end;
-            h2 {
 
+}
 
+@media screen and (min-width: 900px) {
+    .container {
+        .card {
+            &.right {
+                &>:nth-child(2) {
+                    grid-column: 1;
+                    grid-row: 1;
+                }
+                .title {
+                    grid-column: 2/ span 2;
+                    text-align: end;
+                    h2 {
+        
+        
+                    }
+                }
             }
+        }
+    }
+}
+
+@media screen and (max-width:900px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+    .card {
+        &.rigth {
+
         }
     }
 }
