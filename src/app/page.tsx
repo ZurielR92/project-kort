@@ -1,4 +1,3 @@
-import { CategoriesSection } from '@/Components/HomePage/CategoriesSection';
 import { WelcomeHome } from '@/Components/HomePage/Welcome'
 import { categoriesList } from '@/data/products';
 import { ICategory } from '@/interfaces';
@@ -8,6 +7,7 @@ import { WelcomeSection } from '@/Components/WelcomeSection';
 import { CustomersSection } from '@/Components/CustomersSection';
 import { CategoriesGrid } from '@/Components/CategoriesGrid';
 import { AboutUs } from '@/Components/AboutUs';
+import { CategoriesSection } from '@/Components/CategoriesSection';
 
 
 const getCategories = async () => {
@@ -47,7 +47,8 @@ const HomePage = async ({ searchParams }:Props) => {
       />
       <CustomersSection/>
       {/* <AboutUs/> */}
-      <CategoriesGrid categories={categories}/>
+      {/* <CategoriesGrid categories={categories}/> */}
+      <CategoriesSection/>
       <Services/>
     </main>
   )
