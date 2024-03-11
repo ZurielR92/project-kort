@@ -1,9 +1,9 @@
 .container {
     max-width: 1280px;
     margin: auto;
-    margin-top: 10rem;
     width: 100vw;
     display: grid;
+    margin-bottom: 5rem;
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
     .title {
@@ -13,13 +13,17 @@
         h2 {
             color: var(--color-accent);
             line-height: 2rem;
+            margin-top: 0;
             strong {
+                font-weight: 900;
                 font-size: 3rem;
                 color: var(--color-primary);
             }
         }
         p {
             flex-grow: 1;
+            margin-top: 0;
+            line-height: 1.5;
         }
         button {
             width: 100%;
@@ -55,21 +59,54 @@
 
 }
 
+.action {
+    background: var(--color-accent-dark);
+    background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, var(--color-accent-dark) 40px ), repeating-linear-gradient( transparent, var(--color-accent) );    overflow: hidden;
+    //background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #0056a4 40px ), repeating-linear-gradient( #004b9255, #004b92 );    overflow: hidden;
+    color: white;
+    padding: 3rem 0;
+    margin-bottom: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h2 {
+        font-size: 3rem;
+        margin: 0;
+        text-align: center;
+    }
+    button {
+        margin-top: 2rem;
+        color: white;
+        font-size: 1.2rem;
+        font-weight: 800;
+        padding: 1rem;
+        border: none;
+        background: var(--color-primary);
+        cursor: pointer;
+        transition: all .2s ease-in-out;
+        box-shadow: 5px 5px 0px white;
+        &:hover {
+            box-shadow: 0px 0px 0px white;
+            transform: translate(5px, 5px);
+        }
+    }
+}
+
 @media screen and (min-width: 900px) {
     .container {
-        .card {
-            &.right {
-                &>:nth-child(2) {
-                    grid-column: 1;
-                    grid-row: 1;
-                }
-                .title {
-                    grid-column: 2/ span 2;
-                    text-align: end;
-                    h2 {
-        
-        
-                    }
+        &.right {
+            &>:nth-child(2) {
+                grid-column: 1;
+                grid-row: 1;
+            }
+            .title {
+                grid-column: 2/ span 2;
+                text-align: end;
+                h2 {
+    
+    
                 }
             }
         }
@@ -80,9 +117,23 @@
     .container {
         grid-template-columns: 1fr;
     }
+    .title {
+        h2 {
+            padding: .5rem;
+        }
+        p {
+            padding: .5rem;
+        }
+        grid-column: span 1;
+    }
     .card {
         &.rigth {
 
+        }
+    }
+    .action {
+        h2 {
+            font-size: 2.5rem;
         }
     }
 }

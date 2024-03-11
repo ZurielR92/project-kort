@@ -10,7 +10,7 @@ import Script from 'next/script'
 
 const rubik = Montserrat({
   subsets:['latin'],
-  variable: '--font-rubik'
+  variable: '--font-rubik',
 })
 
 const pacifico = Pacifico({
