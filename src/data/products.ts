@@ -1855,4 +1855,239 @@ export const categoriesList: ICategory[] = [
             },
         ]
     },
+    /**AVISOS EN ACRÍLICO */
+    {
+        code: '0801',
+        type: 'Corte y Grabado Láser',
+        name: 'Avisos en Acrílico',
+        shortDescription: 'Descripción de bolsas de papel',
+        description: 'dfjsdfsd',
+        basicPrice: 500000,
+        minQuantity: 100,
+        url: '/servicios/cajas_y_empaques/bolsas_de_papel',
+        displayImage: '/img/products/cajas_empaques/bolsa_papel.jpg',
+        altDisplay: 'Bolsas de papel personalizadas en medellín',
+        gallery: [''],
+        products: [
+            {
+                title:'Aviso con Acrílico Cantoneado',
+                img: '/img\productos\corte-laser\avisos-acrilico\aviso-cantoneado.jpg',
+                altImg:'Avisos con acrilico cantoneado en medellín antioquia',
+                shortDescription:'',
+                priceConfig: {
+                    priceType: 'Precio Fijo',
+                    price: 80000,
+                    queantity: 1000,
+                    quantities: [
+                        '100','200','500','1000','2000','5000','10000'
+                    ]
+                }
+            },
+            {
+                title:'Letras Corporeas (Cantoneadas)',
+                img: '/img\productos\corte-laser\avisos-acrilico\letras-cantoneadas.jpg',
+                altImg:'Letras Cantoneadas en Medellín',
+                shortDescription:'',
+                priceConfig: {
+                    priceType: 'Precio Fijo',
+                    price: 80000,
+                    queantity: 1000,
+                    quantities: [
+                        '100','200','500','1000','2000','5000','10000'
+                    ]
+                }
+            },
+            {
+                title:'Colombinas en Acrilico',
+                img: '/img\productos\corte-laser\avisos-acrilico\colombinas.jpg',
+                altImg:'Colombinas en Acrilico en Medellín',
+                shortDescription:'',
+                priceConfig: {
+                    priceType: 'Precio Fijo',
+                    price: 80000,
+                    queantity: 1000,
+                    quantities: [
+                        '100','200','500','1000','2000','5000','10000'
+                    ]
+                }
+            },
+        ]
+    },
+    
+    /**AVISOS EN NEONFLEX */
+    {
+        code: '0802',
+        type: 'Corte y Grabado Láser',
+        name: 'Avisos en Neonflex',
+        shortDescription: 'Descripción de bolsas de papel',
+        description: 'dfjsdfsd',
+        basicPrice: 500000,
+        minQuantity: 100,
+        url: '/servicios/cajas_y_empaques/bolsas_de_papel',
+        displayImage: '/img\productos\corte-laser\avisos-neonflex\avisos-neonflex.jpg',
+        altDisplay: 'Bolsas de papel personalizadas en medellín',
+        gallery: [''],
+        products: [
+            {
+                title:'Aviso en Neonflex Blanco',
+                img: '/img\productos\corte-laser\avisos-acrilico\aviso-cantoneado.jpg',
+                altImg:'Avisos Neonflex Blanco en Medellín',
+                shortDescription:'',
+                priceConfig: {
+                    priceType: 'Precio Fijo',
+                    price: 80000,
+                    queantity: 1000,
+                    quantities: [
+                        '100','200','500','1000','2000','5000','10000'
+                    ]
+                }
+            },
+            {
+                title:'Avisos en Neonflex Colores',
+                img: '/img\productos\corte-laser\avisos-neonflex\neonflex-colores.jpg',
+                altImg:'Avisos Neonflex Colores en Medellín',
+                shortDescription:'',
+                priceConfig: {
+                    priceType: 'Precio Fijo',
+                    price: 80000,
+                    queantity: 1000,
+                    quantities: [
+                        '100','200','500','1000','2000','5000','10000'
+                    ]
+                }
+            },
+        ]
+    },
+    /**SEÑALIZACIÓN EN ACRILICO*/
+    {
+        code: '0803',
+        type: 'Corte y Grabado Láser',
+        name: 'Señalización en Acrílico',
+        shortDescription: 'Descripción de bolsas de papel',
+        description: 'dfjsdfsd',
+        basicPrice: 500000,
+        minQuantity: 100,
+        url: '/servicios/cajas_y_empaques/bolsas_de_papel',
+        displayImage: '/img\productos\corte-laser\senalizacion\senalizacion-corporativa.jpg',
+        altDisplay: 'Bolsas de papel personalizadas en medellín',
+        gallery: [''],
+        products: [
+            {
+                title:'Señalización Reglamentaria',
+                img: '/img\productos\corte-laser\senalizacion\senalizacion-reglamentaria.jpg',
+                altImg:'Impresión de Señalización Reglamentaria en Medellín',
+                shortDescription:'',
+                priceConfig: {
+                    priceType: 'Precio Fijo',
+                    price: 80000,
+                    queantity: 1000,
+                    quantities: [
+                        '100','200','500','1000','2000','5000','10000'
+                    ]
+                }
+            },
+            {
+                title:'Señalización Corporativa',
+                img: '/img\productos\corte-laser\senalizacion\senalizacion-corporativa.jpg',
+                altImg:'Impresión e Instalación de Señalización Corporativa en Medellín',
+                shortDescription:'',
+                priceConfig: {
+                    priceType: 'Precio Fijo',
+                    price: 80000,
+                    queantity: 1000,
+                    quantities: [
+                        '100','200','500','1000','2000','5000','10000'
+                    ]
+                }
+            },
+        ]
+    },
+    /**DECORACIÓN E ILUMINACIÓN*/
+    {
+        code: '0804',
+        type: 'Corte y Grabado Láser',
+        name: 'Decoración e Iluminación',
+        shortDescription: 'Descripción de bolsas de papel',
+        description: 'dfjsdfsd',
+        basicPrice: 500000,
+        minQuantity: 100,
+        url: '/servicios/cajas_y_empaques/bolsas_de_papel',
+        displayImage: '/img\productos\corte-laser\senalizacion\senalizacion-corporativa.jpg',
+        altDisplay: 'Bolsas de papel personalizadas en medellín',
+        gallery: [''],
+        products: [
+            {
+                title:'Arte en MDF',
+                img: '/img\productos\corte-laser\decoracion-iluminacion\arte-mdf.jpg',
+                altImg:'Corte y Grabado Laser de Arte en MDF en Medellín',
+                shortDescription:'',
+                priceConfig: {
+                    priceType: 'Precio Fijo',
+                    price: 80000,
+                    queantity: 1000,
+                    quantities: [
+                        '100','200','500','1000','2000','5000','10000'
+                    ]
+                }
+            },
+            {
+                title:'Lamparas 3D',
+                img: '/img\productos\corte-laser\decoracion-iluminacion\lamparas-3d.jpg',
+                altImg:'Lamparas 3D personalizadas en Medellín',
+                shortDescription:'',
+                priceConfig: {
+                    priceType: 'Precio Fijo',
+                    price: 80000,
+                    queantity: 1000,
+                    quantities: [
+                        '100','200','500','1000','2000','5000','10000'
+                    ]
+                }
+            },
+        ]
+    },
+    /**PLACAS CONMEMORATIVAS*/
+    {
+        code: '0804',
+        type: 'Corte y Grabado Láser',
+        name: 'Trofeos y Placas Conmemorativas',
+        shortDescription: 'Descripción de bolsas de papel',
+        description: 'dfjsdfsd',
+        basicPrice: 500000,
+        minQuantity: 100,
+        url: '/servicios/cajas_y_empaques/bolsas_de_papel',
+        displayImage: '/img\productos\corte-laser\senalizacion\senalizacion-corporativa.jpg',
+        altDisplay: 'Bolsas de papel personalizadas en medellín',
+        gallery: [''],
+        products: [
+            {
+                title:'Placas Conmemorativas Grabadas',
+                img: '/img\productos\corte-laser\placas-conmemorativas\placas-grabadas.jpg',
+                altImg:'Corte y Grabado Laser de Arte en MDF en Medellín',
+                shortDescription:'',
+                priceConfig: {
+                    priceType: 'Precio Fijo',
+                    price: 80000,
+                    queantity: 1000,
+                    quantities: [
+                        '100','200','500','1000','2000','5000','10000'
+                    ]
+                }
+            },
+            {
+                title:'Placas Conmemorativas con Color',
+                img: '/img\productos\corte-laser\placas-conmemorativas\placas-color.jpg',
+                altImg:'Lamparas 3D personalizadas en Medellín',
+                shortDescription:'',
+                priceConfig: {
+                    priceType: 'Precio Fijo',
+                    price: 80000,
+                    queantity: 1000,
+                    quantities: [
+                        '100','200','500','1000','2000','5000','10000'
+                    ]
+                }
+            },
+        ]
+    },
 ]

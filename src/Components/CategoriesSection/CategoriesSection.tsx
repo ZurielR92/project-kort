@@ -90,21 +90,21 @@ const CategoriesSection: React.FC<CategoriesSectionProps>  = ({}) => {
 				</div>
 				<TildCard
 					title='Avisos en Neonflex'
-					srcImage='/img\products\publicidad_exterior\neonflex_sencillo.jpg'
+					srcImage='/img\productos\corte-laser\avisos-neonflex\avisos-neonflex.jpg'
 					altImage='Avisos de Neonflex en Medellín'
 					ariaLabel=''
 					url='/'
 				/>
 				<TildCard
 					title='Avisos en Acrilico'
-					srcImage='/img\products\publicidad_exterior\aviso_luminoso_acrilico.jpg'
+					srcImage='/img\productos\corte-laser\avisos-acrilico\avisos-acrilico.jpg'
 					altImage='Impresión de Pendones en Medellín'
 					ariaLabel=''
 					url='/'
 				/>
 				<TildCard
 					title='Decoración e Iluminación'
-					srcImage='/img\products\gran_formato\vinilo_fotomural.jpg'
+					srcImage='/img\productos\corte-laser\decoracion-iluminacion\decoracion-iluminacion.jpg'
 					altImage='Impresión de Pendones en Medellín'
 					ariaLabel=''
 					url='/'
@@ -112,12 +112,62 @@ const CategoriesSection: React.FC<CategoriesSectionProps>  = ({}) => {
 				/>
 				<TildCard
 					title='Trofeos y Placas Conmemorativas'
-					srcImage='/img/products/plegadizas.jpg'
+					srcImage='/img\productos\corte-laser\placas-conmemorativas\placas-conmemorativas.jpg'
 					altImage='Impresión de Pendones en Medellín'
 					ariaLabel=''
 					url='/'
 				/>
 			</section>
+
+
+
+
+ 			<section className={`${styles.container}`}>
+				<div className={styles.title}>
+					<h2>PUBLICIDAD <br /> <strong>EXTERIOR</strong></h2>
+					<p>
+						Desde vallas publicitarias que dominan el horizonte hasta murales que transforman espacios, nuestro equipo de expertos en impresión en gran formato está aquí para hacer realidad tus visiones. Utilizamos tecnología de vanguardia y materiales de primera calidad para garantizar resultados que no solo se ven bien, sino que también transmiten el mensaje que deseas compartir.
+					</p>
+					<Link href={'/'}>
+						<button>
+							Mas informción sobre Corte y Grabado Lase en Medellín
+						</button>
+					</Link>
+				</div>
+				<TildCard
+					title='Avisos en Neonflex'
+					srcImage='/img\productos\corte-laser\avisos-neonflex\avisos-neonflex.jpg'
+					altImage='Avisos de Neonflex en Medellín'
+					ariaLabel=''
+					url='/'
+				/>
+				<TildCard
+					title='Avisos en Acrilico'
+					srcImage='/img\productos\corte-laser\avisos-acrilico\avisos-acrilico.jpg'
+					altImage='Impresión de Pendones en Medellín'
+					ariaLabel=''
+					url='/'
+				/>
+				<TildCard
+					title='Decoración e Iluminación'
+					srcImage='/img\productos\corte-laser\decoracion-iluminacion\decoracion-iluminacion.jpg'
+					altImage='Impresión de Pendones en Medellín'
+					ariaLabel=''
+					url='/'
+					spanColumn
+				/>
+				<TildCard
+					title='Trofeos y Placas Conmemorativas'
+					srcImage='/img\productos\corte-laser\placas-conmemorativas\placas-conmemorativas.jpg'
+					altImage='Impresión de Pendones en Medellín'
+					ariaLabel=''
+					url='/'
+				/>
+			</section>
+
+
+
+
  		</>
 	);
 };
