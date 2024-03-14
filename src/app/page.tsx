@@ -2,7 +2,8 @@ import { categoriesList } from '@/data/products';
 import { ICategory } from '@/interfaces';
 import { WelcomeSection } from '@/Components/WelcomeSection';
 import { CustomersSection } from '@/Components/CustomersSection';
-import { CategoriesSection } from '@/Components/CategoriesSection';
+import { CategoriesGrid } from '@/Components/CategoriesGrid';
+import { Services } from './components/Services';
 
 
 const getCategories = async () => {
@@ -44,9 +45,9 @@ const HomePage = async ({ searchParams }:Props) => {
         urlImage='/welcome-home.png'
       />
       {/* <AboutUs/> */}
-      {/* <CategoriesGrid categories={categories}/> */}
-      <CategoriesSection/>
-      {/* <Services/> */}
+      <CategoriesGrid categories={categories}/>
+      {/* <CategoriesSection/> */}
+      <Services/>
 
       <CustomersSection/>
 

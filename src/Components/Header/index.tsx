@@ -9,7 +9,7 @@ import { IconsSocial } from '../IconsSocial'
 import { CartIcon, SimpleDownArrow } from '../MaterialZ/Icons'
 import { ButtonMenuAnimated } from '../MaterialZ'
 import UIContext from '@/context/UI/UIContext'
-import { motion, useMotionValueEvent, useScroll } from 'framer-motion'
+import { useMotionValueEvent, useScroll } from 'framer-motion'
 
 interface Props {
 
@@ -66,76 +66,59 @@ const Header:FC<Props> = () => {
   return (
 
     <header className={styles.header}>
-        <motion.div
+        <div
             className={styles.contact}
         >
-            <motion.div
-                initial={{y:-30, opacity:0}}
-                animate={{y:0, opacity:1}}
+            <div
             >
                 <Link href={'/'} aria-label='Inicio Agencia Kubica'>
                     <Image alt='' priority src={'/logo-kort.png'} width={86} height={50}/>
                 </Link>
-            </motion.div>
+            </div>
 
             <Link href={'mailto:medellin@agenciakbk.com'}>
-                <motion.button
-                    tabIndex={-1}
-                    initial={{y:-30, opacity:0}}
-                    animate={{y:0, opacity:1}}
-                    transition={{delay:.1}}
+                <button
                 >
                     <Image src={'/icons/email-icon.png'} width={39} height={25} alt='Email icon'/>
                     <div>
                         <small>Correo Electrónico</small>
                         <strong>medellin@agenciakbk.com</strong>
                     </div>
-                </motion.button>
+                </button>
             </Link>
 
             <Link target='_blank' href={ `https://api.whatsapp.com/send?phone=573187458482&text=Hola!%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20sus%20servicios.`}>
-                <motion.button
-                    tabIndex={-1}
-                    initial={{y:-30, opacity:0}}
-                    animate={{y:0, opacity:1}}
-                    transition={{delay:.2}}
+                <button
                 >
                     <Image src={'/icons/phone-icon.png'} width={27} height={25} alt='Email icon'/>
                     <div>
                         <small>Teléfono</small>
                         <strong style={{whiteSpace:'nowrap'}}>+57 318 745 84 82</strong>
                     </div>
-                </motion.button>
+                </button>
             </Link>
 
             <Link target='_blank' href={'https://maps.app.goo.gl/dH21hQYv7eWF7PM79'}>
-                <motion.button
-                    tabIndex={-1}
-                    initial={{y:-30, opacity:0}}
-                    animate={{y:0, opacity:1}}
-                    transition={{delay:.3}}
+                <button
                 >
                     <Image src={'/icons/location-icon.png'} width={22} height={25} alt='Email icon'/>
                     <div>
                         <strong style={{fontSize:'.85rem', textAlign:'left'}}>Cra 52 # 3 Sur 89, Local 04 Mall El Rodeo</strong>
                     </div>
-                </motion.button>
+                </button>
             </Link>
 
             <Link target='_blank' href={ `https://api.whatsapp.com/send?phone=573187458482&text=Hola!%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20sus%20servicios.`}>
-                <motion.button 
+                <button 
                     tabIndex={-1}
-                    initial={{y:-30, opacity:0}}
-                    animate={{y:0, opacity:1}}
-                    transition={{delay:.4}}
                     className={styles.ws}
                     style={{whiteSpace:'nowrap'}}
                 >
                     <Image src={'/icons/ws-icon.png'} width={25} height={25} alt='Whatsapp Icon'/>
                     Pedir Cotización
-                </motion.button>
+                </button>
             </Link>
-        </motion.div>
+        </div>
         
         <nav id="menu" className={`${styles.menu} ${ position > (141.51 - 63) - 16 ? styles.active : '' }`}>
 

@@ -51,7 +51,7 @@ const WelcomeSection: React.FC<WelcomeSectionProps>  = ({
 				<div className={styles.image}>
 
 
-					<Image priority src={urlImage} width={500} height={435} alt={altImage}/>
+					<Image priority src={urlImage} width={500} height={430} alt={altImage}/>
 
 
 				</div>
