@@ -1,18 +1,12 @@
-'use client'
-import { motion } from 'framer-motion';
-import React, { FC, useRef, useState } from 'react';
+import React, { FC } from 'react';
 import styles from './CategoriesSection.module.scss';
 import Link from 'next/link';
 import Image from 'next/image';
-import { url } from 'inspector';
 
 export interface CategoriesSectionProps {
 	// types...
 }
 
-
-const ROTATION_RANGE = 32.5;
-const HALF_ROTATION_RANGE = 32.5 / 2;
 
 
 const CategoriesSection: React.FC<CategoriesSectionProps>  = ({}) => {
@@ -37,21 +31,21 @@ const CategoriesSection: React.FC<CategoriesSectionProps>  = ({}) => {
 					srcImage='/img\productos\gran-formato\pendones.jpg'
 					altImage='Impresión de Pendones en Medellín'
 					ariaLabel=''
-					url='/'
+					url='/servicios/gran_formato/pendones'
 				/>
 				<TildCard
 					title='Decoración Vheícular'
 					srcImage='/img\productos\gran-formato\decoracion-vehicular.jpg'
 					altImage='Impresión de Pendones en Medellín'
 					ariaLabel=''
-					url='/'
+					url='/servicios/gran_formato/decoracion_vehicular'
 				/>
 				<TildCard
 					title='Vinilos Adhesivos'
 					srcImage='/img\productos\gran-formato\vinilos-adhesivos.jpg'
 					altImage='Impresión de Pendones en Medellín'
 					ariaLabel=''
-					url='/'
+					url='/servicios/gran_formato/vinilos_adhesivos'
 					spanColumn
 				/>
 				<TildCard
@@ -59,7 +53,7 @@ const CategoriesSection: React.FC<CategoriesSectionProps>  = ({}) => {
 					srcImage='/img\productos\gran-formato\microperforados.jpg'
 					altImage='Impresión de Pendones en Medellín'
 					ariaLabel=''
-					url='/'
+					url='/servicios/gran_formato/microperforados'
 				/>
 			</section>
 
@@ -219,9 +213,6 @@ const TildCard:FC<TildCardProps> = ({title, altImage, srcImage, ariaLabel, url, 
 			<div className={`${styles.card}`} >
 				<Image src={srcImage} fill alt={altImage}/>
 				<h3
-				style={{
-					transform: "translateZ(50px)",
-				}}
 				>{title}</h3>
 			</div>
 		</Link>

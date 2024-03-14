@@ -34,12 +34,6 @@
             border: none;
             background: var(--color-primary);
             cursor: pointer;
-            transition: all .2s ease-in-out;
-            box-shadow: 5px 5px 0px var(--color-accent);
-            &:hover {
-                box-shadow: 0px 0px 0px white;
-                transform: translate(5px, 5px);
-            }
         }
     }
     .card {

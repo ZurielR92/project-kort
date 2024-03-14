@@ -1,15 +1,8 @@
-import { WelcomeHome } from '@/Components/HomePage/Welcome'
 import { categoriesList } from '@/data/products';
 import { ICategory } from '@/interfaces';
-import { WhyUs } from './components/WhyUs';
-import { Services } from './components/Services';
 import { WelcomeSection } from '@/Components/WelcomeSection';
 import { CustomersSection } from '@/Components/CustomersSection';
-import { CategoriesGrid } from '@/Components/CategoriesGrid';
-import { AboutUs } from '@/Components/AboutUs';
 import { CategoriesSection } from '@/Components/CategoriesSection';
-import { MotionSlider } from '@/Components/MaterialZ/MotionSlider';
-import Image from 'next/image';
 
 
 const getCategories = async () => {
