@@ -17,19 +17,6 @@ const HALF_ROTATION_RANGE = 32.5 / 2;
 
 const CategoriesSection: React.FC<CategoriesSectionProps>  = ({}) => {
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 	return (
 		<>
 
@@ -173,8 +160,6 @@ const CategoriesSection: React.FC<CategoriesSectionProps>  = ({}) => {
 				/>
 			</section>
 
-
-
  			<section className={`${styles.container} ${styles.right}`}>
 				<div className={styles.title}>
 					<h2>PLOTTER <br /> <strong>DE CORTE</strong></h2>
@@ -227,53 +212,18 @@ interface TildCardProps {
 	spanRow?: boolean
 }
 const TildCard:FC<TildCardProps> = ({title, altImage, srcImage, ariaLabel, url, spanColumn, spanRow}) => {
-	const ref:any = useRef(null);
-	const [rotateX, setRotateX] = useState(0);
-	const [rotateY, setRotateY] = useState(0);
-	const handleMouseMove = (e:any) => {
-		if (!ref.current) return;
-		const rect = ref.current.getBoundingClientRect();
-		const width = rect.width;
-		const height = rect.height;
-		const mouseX = (e.clientX - rect.left) * ROTATION_RANGE;
-		const mouseY = (e.clientY - rect.top) * ROTATION_RANGE;
-		const rY = mouseX / width - HALF_ROTATION_RANGE;
-		const rX = (mouseY / height - HALF_ROTATION_RANGE) * -1;
-		setRotateX(rX);
-		setRotateY(rY);
-	};
-	const handleMouseLeave = () => {
-		if (!ref.current) return;
-		setRotateX(0);
-		setRotateY(0);
-	};
+
 
 	return (
 		<Link href={url} aria-label={ariaLabel}>
-			<motion.div 
-				className={`${styles.card}`}
-				ref={ref}
-				onMouseMove={handleMouseMove}
-				onMouseLeave={handleMouseLeave}
-				style={{
-				transformStyle: "preserve-3d",
-				}}
-				animate={{
-				rotateX,
-				rotateY,
-				}}
-				whileHover={{
-					scale:1.05,
-					boxShadow:'0px 0px 5px rgba(0,0,0,.5)'
-				}}
-			>
+			<div className={`${styles.card}`} >
 				<Image src={srcImage} fill alt={altImage}/>
 				<h3
 				style={{
 					transform: "translateZ(50px)",
 				}}
 				>{title}</h3>
-			</motion.div>
+			</div>
 		</Link>
 	)
 }
