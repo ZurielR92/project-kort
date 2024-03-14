@@ -23,6 +23,11 @@ const pacifico = Pacifico({
 export const metadata: Metadata = {
   title: 'Agencia de Publicidad | Agencia Kubica Medellín',
   description: 'Ofrecemos servicios de litografía y publicidad en Medellín. Impresión de calidad, diseño gráfico y soluciones publicitarias para tu negocio. ¡Contáctanos hoy!',
+  openGraph: {
+    title: 'Agencia de Publicidad | Agencia Kubica Medellín',
+    description: 'Ofrecemos servicios de Impresión y Publicidad en Medellín. Impresión de calidad, diseño gráfico y soluciones publicitarias para tu negocio. ¡Contáctanos hoy!',
+    images: 'https://www.kbk-agenciamedellin.com/og.jpg'
+  },
   icons:{
     apple:'/icon-512x512.png',
     icon: {

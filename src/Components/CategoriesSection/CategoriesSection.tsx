@@ -210,10 +210,6 @@ const CategoriesSection: React.FC<CategoriesSectionProps>  = ({}) => {
 					spanColumn
 				/>
 			</section>
-
-
-
-
  		</>
 	);
 };
@@ -279,6 +275,5 @@ const TildCard:FC<TildCardProps> = ({title, altImage, srcImage, ariaLabel, url, 
 				>{title}</h3>
 			</motion.div>
 		</Link>
-		
 	)
 }

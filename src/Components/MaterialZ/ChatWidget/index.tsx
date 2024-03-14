@@ -62,7 +62,7 @@ export const ChatWidget:FC<Props> = ({ active, onClick }) => {
             <div onClick={ !act ? handleToogleActivate : handleSendMessage  } className={ `${styles.burbuja} ${ act && styles.active }` }>
                 {
                     !act
-                        ? <WsIcon width={ 38 } fill='#fff'/>
+                        ? <WsIcon className={styles.wsicon} width={ 38 } fill='red'/>
                         : <span>Iniciar Chat <SendIcon width={ 20 } fill='#fff'/></span>
                 }
             </div>

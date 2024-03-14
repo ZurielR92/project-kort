@@ -8,6 +8,8 @@ import { CustomersSection } from '@/Components/CustomersSection';
 import { CategoriesGrid } from '@/Components/CategoriesGrid';
 import { AboutUs } from '@/Components/AboutUs';
 import { CategoriesSection } from '@/Components/CategoriesSection';
+import { MotionSlider } from '@/Components/MaterialZ/MotionSlider';
+import Image from 'next/image';
 
 
 const getCategories = async () => {
@@ -29,6 +31,9 @@ interface Props {
   searchParams:any
 }
 
+
+const images = [1,2,3]
+
 const HomePage = async ({ searchParams }:Props) => {
   const categories = await getCategories();
   
@@ -45,11 +50,16 @@ const HomePage = async ({ searchParams }:Props) => {
         description={<>Ofrecemos servicios especializados, soluciones estratégicas y una metodología de trabajo integral que potenciará aún más tu negocio.</>}
         urlImage='/welcome-home.png'
       />
-      <CustomersSection/>
       {/* <AboutUs/> */}
       {/* <CategoriesGrid categories={categories}/> */}
       <CategoriesSection/>
-      <Services/>
+      {/* <Services/> */}
+
+      <CustomersSection/>
+
+
+
+
     </main>
   )
 }
