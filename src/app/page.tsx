@@ -44,12 +44,12 @@ const HomePage = async ({ searchParams }:Props) => {
         description={<>Ofrecemos servicios especializados, soluciones estratégicas y una metodología de trabajo integral que potenciará aún más tu negocio.</>}
         urlImage='/welcome-home.png'
       />
+      <CustomersSection/>
       {/* <AboutUs/> */}
       <CategoriesGrid categories={categories}/>
       {/* <CategoriesSection/> */}
       <Services/>
 
-      <CustomersSection/>
 
 
 

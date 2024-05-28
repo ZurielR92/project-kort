@@ -1,11 +1,8 @@
 .welcomesection {
     min-height: 60vh;
     position: relative;
-    background-color: #0056a4;
     opacity: 1;
-    background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #0056a4 40px ), repeating-linear-gradient( #004b9255, #004b92 );    overflow: hidden;
     padding: 1rem;
-    color: white;
     display: flex;
     .container {
         display: flex;
@@ -22,7 +19,17 @@
             h1 {
                 font-size: 3.5rem;
                 line-height: 3.5rem;
+                font-weight: 700;
                 margin: 0;
+                margin-top: 2rem;
+                span {
+                    &.green {
+                        color: #A2C53E;
+                    }
+                    &.blue {
+                        color: #1059A1;
+                    }
+                }
             }
             p {
                 font-size: 1.5rem;
@@ -37,26 +44,28 @@
             }
             .counters {
                 display: flex;
+                justify-content: space-between;
+                flex-grow: 1;
                 gap: 2rem;
+                >span {
+                    width: 2px;
+                    background: #A2C53E;
+                    margin: 0;
+                }
                 > div {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    text-align: center;
                     strong {
                         font-size: 3rem;
+                        color: #1059A1;
+                        font-weight: 800;
                     }
                     h2 {
                         margin: 0;
                     }
                 }
-            }
-            button {
-                margin-top: 1rem;
-                border: none;
-                padding: 1rem;
-                font-family: var(--font-body);
-                background: var(--color-action);
-                font-weight: 500;
-                border-radius: .5rem;
-                color: white;
-                font-size: 1.1rem;
             }
         }
 
@@ -64,18 +73,6 @@
     
         }
 
-    }
-    .svg {
-        position: absolute;
-        bottom: -1px;
-        width: 100vw;
-        left: 0;
-    }
-    .background {
-        background: var(--color-primary);
-        z-index: -1;
-        object-fit: cover;
-        object-position: center;
     }
 }
 
@@ -110,6 +107,59 @@
             .image {
                 width: 100%;
                 max-width: 100%;
+                img {
+                    max-width: 80vw;
+                    height: fit-content;
+                    object-fit: contain;
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width:450px) {
+    .welcomesection {
+        height: fit-content;
+        .container {
+            flex-direction: column;
+            align-items: center;
+            margin-top: 4rem;
+            margin-bottom: 0rem;
+            .info {
+                h1 {
+                    font-size: 2.15rem;
+                    font-weight: 900;
+                    line-height: 2.7rem;
+                    margin-top: 0rem;
+                }
+                p {
+                    font-size: 1.2rem;
+                    margin-top: 1rem;
+                    margin-bottom: 1rem;
+                }
+                .counters {
+                    justify-content: space-between;
+                    gap: 0;
+                    >div {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        strong {
+                            font-size: 2rem;
+                        }
+                        h2 {
+                            font-size: 1rem;
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+            .image {
+                width: 100%;
+                max-width: 100%;
+                display: flex;
+                justify-content: center;
                 img {
                     max-width: 80vw;
                     height: fit-content;
