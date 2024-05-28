@@ -11,6 +11,7 @@ import styles from './CategoriesCard.module.scss'
 //Propiedades que recibe el componente
 interface Props {
     category: ICategory
+    hide?: boolean
 }
 
 
@@ -35,13 +36,13 @@ const item: Variants = {
 }
 
 
-export const CategoriesCard:FC<Props> = ({ category }) => {
+export const CategoriesCard:FC<Props> = ({ category, hide=false }) => {
 
     return (
 
       <motion.div
         variants={item} 
-        className={styles.card2}
+        className={`${styles.card2} ${hide?styles.hide:null}`}
         
       >
         <Link href={category.url}>

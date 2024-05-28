@@ -4,6 +4,7 @@ import { WelcomeSection } from '@/Components/WelcomeSection';
 import { CustomersSection } from '@/Components/CustomersSection';
 import { CategoriesGrid } from '@/Components/CategoriesGrid';
 import { Services } from './components/Services';
+import { FAQS } from '@/Components/FAQS';
 
 
 const getCategories = async () => {
@@ -48,7 +49,8 @@ const HomePage = async ({ searchParams }:Props) => {
       {/* <AboutUs/> */}
       <CategoriesGrid categories={categories}/>
       {/* <CategoriesSection/> */}
-      <Services/>
+      {/* <Services/> */}
+      <FAQS/>
 
 
 
