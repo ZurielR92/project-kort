@@ -63,6 +63,44 @@ const FaqsPage = () => {
                 </p>
             </li>
 
+            <li>
+                <div>
+                    <Image src={'/arrow.png'} width={30} height={30} alt='arrow icon'/>
+                    <h2>¿Que pasos debo seguir para realizar una compra?</h2>
+                </div>
+                <p>
+                    <strong>1.</strong> Contáctanos a nuestros números y en ellos un asesor te asesorara según las características y observaciones que indiques. <br /><br />
+
+                    <strong>2.</strong> Realiza el diseño por medio de nuestro equipo, dándonos las indicaciones de como quieres que luzca tu pieza y que esperas que transmita, este paso finaliza con la aprobación de tu diseño para mandar a producción <br /><br />
+
+                    <strong>3.</strong> Al haber llegado a un acuerdo y aprobación de tus diseños, debes realizar el pago y enviar el comprobante a tu asesor con el que hiciste todo el proceso. <br /><br />
+
+                    <strong>5.</strong> Por ultimo selecciona el método de entrega por el que deseas recibir tus piezas, ya sea envió, domicilio o contra entrega en la ciudad de Medellín. <br /><br />
+
+                    <strong>NOTA:</strong> en caso tal de que quieras enviar tu diseño debe estar previamente revisado que cumpla con las características técnicas para enviar a producción.
+                </p>
+            </li>
+
+            <li>
+                <div>
+                    <Image src={'/arrow.png'} width={30} height={30} alt='arrow icon'/>
+                    <h2>¿Que metodos de pago manejan?</h2>
+                </div>
+                <p>
+                    Contamos con varios métodos de pago para tus pendones , ya sea transferencia bancaria, pagos contra entrega en domicilio o directamente en nuestro local.
+                </p>
+            </li>
+
+            <li>
+                <div>
+                    <Image src={'/arrow.png'} width={30} height={30} alt='arrow icon'/>
+                    <h2>¿Pueden mostrarme ejemplos de su trabajo previo?</h2>
+                </div>
+                <p>
+                    Claro que si, puedes ingresar a la sección de proyectos donde encontraras una extensa galería de proyectos en los que hemos trabajado <Link href={'/proyectos'}>wwww.kbk-agenciamedellin.com/proyectos</Link>
+                </p>
+            </li>
+
 
         </ul>
 

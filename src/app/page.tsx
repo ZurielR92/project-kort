@@ -9,7 +9,7 @@ import { FAQS } from '@/Components/FAQS';
 
 const getCategories = async () => {
   const listaCategorias: ICategory[] = [];
-  const codigos: string[] = [ '0401','0406','0504','0501','0503', '0505', '0506','0405', '0604', '0603',  ];
+  const codigos: string[] = [ '0403','0504','0404','0507','0101', '0102', '0804','0501', '0502', '0604'  ];
 
   for (let p = 0; p < 12; p++) {
     categoriesList.find((obj, i) => {

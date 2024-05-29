@@ -10,7 +10,7 @@ export const categoriesList: ICategory[] = [
         basicPrice: 80000,
         minQuantity: 1000,
         url: '/servicios/publicidad_impresa/tarjetas_de_presentacion',
-        displayImage: '/img/products/tarjetas-de-presentacion.png',
+        displayImage: '/img/products/publicidad_impresa/tarjetas.jpg',
         altDisplay: 'Impresión y diseño de tarjetas de presentación en santiago',
         gallery: [''],
         products: [
@@ -90,13 +90,13 @@ export const categoriesList: ICategory[] = [
     {
         code: '0102',
         type: 'Publicidad Impresa',
-        name: 'Volantes Publicitarios',
+        name: 'Volantes',
         shortDescription: 'Un volante es un elemento publicitario útil para dar a conocer de manera física y completa tus productos y servicios.',
         description: '',
         basicPrice: 70000,
         minQuantity: 1000,
         url: '/servicios/publicidad_impresa/volantes',
-        displayImage: '/img/products/volantes.png',
+        displayImage: '/img/products/publicidad_impresa/volantes.jpg',
         altDisplay: 'Impresión y diseño de flyers en santiago',
         gallery: [''],
         products: [
@@ -931,7 +931,7 @@ export const categoriesList: ICategory[] = [
         basicPrice: 25000,
         minQuantity: 5,
         url: '/servicios/publicidad-exterior/vallas',
-        displayImage: '/img/products/vallas.png',
+        displayImage: '/img/products/publicidad_exterior/valla.jpg',
         altDisplay: 'Impresión y diseño de vallas en medellín',
         gallery: ['']
     },
@@ -944,7 +944,7 @@ export const categoriesList: ICategory[] = [
         basicPrice: 25000,
         minQuantity: 1,
         url: '/servicios/publicidad_exterior/rompetraficos',
-        displayImage: '/img/products/publicidad_exterior/paloma.jpg',
+        displayImage: '/img/products/publicidad_exterior/rompetrafico.jpg',
         altDisplay: 'Diseño e impresión de Rompetráficos en medellín',
         gallery: [''],
         products: [
@@ -1254,7 +1254,7 @@ export const categoriesList: ICategory[] = [
         basicPrice: 25000,
         minQuantity: 5,
         url: '/servicios/gran_formato/microperforados',
-        displayImage: '/img/products/gran_formato/microperforado.jpg',
+        displayImage: '/img/products/gran_formato/microperforados.jpg',
         altDisplay: 'Impresión y diseño de microperforados en medellín',
         gallery: [''],
         products: [
@@ -1442,6 +1442,43 @@ export const categoriesList: ICategory[] = [
         minQuantity: 1,
         url: '/servicios/gran_formato/plotter_de_corte',
         displayImage: '/img/products/gran_formato/plotter_corte.jpg',
+        altDisplay: 'Servicio de corte en plotter en medellín',
+        gallery: [''],
+        products: [
+            {
+                title:'Corte de Vinilo en Plotter',
+                img: '/img/products/gran_formato/plotter_corte_negro.jpg',
+                altImg:'corte vinilo en plotter en santiago',
+                shortDescription:'',
+                priceConfig: {
+                    priceType: 'Precio por Cm2',
+                    price: 80000,
+                    queantity: 1000
+                }
+            },
+            {
+                title:'Corte Vinilo Impreso en Plotter',
+                img: '/img/products/gran_formato/plotter_corte_impreso.jpg',
+                altImg:'corte vinilo impreso en plotter en santiago',
+                shortDescription:'',
+                priceConfig: {
+                    priceType: 'Precio por Cm2',
+                    price: 80000,
+                    queantity: 1000
+                }
+            },
+        ]
+    },
+    {
+        code: '0507',
+        type: 'Gran Formato',
+        name: 'Stands',
+        shortDescription: 'Con el plotter de corte, las posibilidades son infinitas, una completa personalización para tus espacio o cualquier superficie, el limite es tu imaginación.',
+        description: 'dfjsdfsd',
+        basicPrice: 25000,
+        minQuantity: 1,
+        url: '/servicios/gran_formato/plotter_de_corte',
+        displayImage: '/img/products/gran_formato/stands.jpg',
         altDisplay: 'Servicio de corte en plotter en medellín',
         gallery: [''],
         products: [
@@ -2002,61 +2039,17 @@ export const categoriesList: ICategory[] = [
             },
         ]
     },
-    /**DECORACIÓN E ILUMINACIÓN*/
-    {
-        code: '0804',
-        type: 'Corte y Grabado Láser',
-        name: 'Decoración e Iluminación',
-        shortDescription: 'Descripción de bolsas de papel',
-        description: 'dfjsdfsd',
-        basicPrice: 500000,
-        minQuantity: 100,
-        url: '/servicios/cajas_y_empaques/bolsas_de_papel',
-        displayImage: '/img\productos\corte-laser\senalizacion\senalizacion-corporativa.jpg',
-        altDisplay: 'Bolsas de papel personalizadas en medellín',
-        gallery: [''],
-        products: [
-            {
-                title:'Arte en MDF',
-                img: '/img\productos\corte-laser\decoracion-iluminacion\arte-mdf.jpg',
-                altImg:'Corte y Grabado Laser de Arte en MDF en Medellín',
-                shortDescription:'',
-                priceConfig: {
-                    priceType: 'Precio Fijo',
-                    price: 80000,
-                    queantity: 1000,
-                    quantities: [
-                        '100','200','500','1000','2000','5000','10000'
-                    ]
-                }
-            },
-            {
-                title:'Lamparas 3D',
-                img: '/img\productos\corte-laser\decoracion-iluminacion\lamparas-3d.jpg',
-                altImg:'Lamparas 3D personalizadas en Medellín',
-                shortDescription:'',
-                priceConfig: {
-                    priceType: 'Precio Fijo',
-                    price: 80000,
-                    queantity: 1000,
-                    quantities: [
-                        '100','200','500','1000','2000','5000','10000'
-                    ]
-                }
-            },
-        ]
-    },
     /**PLACAS CONMEMORATIVAS*/
     {
         code: '0804',
         type: 'Corte y Grabado Láser',
-        name: 'Trofeos y Placas Conmemorativas',
+        name: 'Trofeos y Placas',
         shortDescription: 'Descripción de bolsas de papel',
         description: 'dfjsdfsd',
         basicPrice: 500000,
         minQuantity: 100,
-        url: '/servicios/cajas_y_empaques/bolsas_de_papel',
-        displayImage: '/img\productos\corte-laser\senalizacion\senalizacion-corporativa.jpg',
+        url: '/servicios/corte_laser/placas.jpg',
+        displayImage: '/img/products/corte_laser/placas.jpg',
         altDisplay: 'Bolsas de papel personalizadas en medellín',
         gallery: [''],
         products: [

@@ -9,14 +9,13 @@
         grid-template-columns: 2fr 1fr;
     }
     span {
-        color: $resalt;
-        font-family: Pacifico, cursive;
+        font-size: 1.3rem;
+        font-weight: 600;
     }
     h2 {
-        color: $dark;
-        font-family: Rubik, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        color: #004b92;
         margin: 0;
-        line-height: 40px;
+        line-height: 50px;
         font-size: 55px;
     }
     > :nth-child( 1 ) {
@@ -65,7 +64,6 @@
         padding: 20px;
         display: flex;
         flex-direction: column;
-        align-items: center;
         span {
         }
         h2 {

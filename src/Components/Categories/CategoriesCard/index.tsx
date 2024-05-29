@@ -45,14 +45,14 @@ export const CategoriesCard:FC<Props> = ({ category, hide=false }) => {
         className={`${styles.card2} ${hide?styles.hide:null}`}
         
       >
-        <Link href={category.url}>
+        {/* <Link href={category.url}> */}
           <div className={styles['img-box2']}>
             <Image src={category.displayImage} fill alt={category.altDisplay}/>
           </div>  
           <div className={styles.title}>
             {category.name}
           </div>
-        </Link>
+       {/*  </Link> */}
       </motion.div>
     )
 
