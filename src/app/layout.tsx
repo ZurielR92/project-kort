@@ -1,10 +1,9 @@
 import type { Metadata } from 'next'
-import { Rubik, Pacifico, Raleway, Montserrat } from 'next/font/google'
+import { Pacifico, Montserrat } from 'next/font/google'
 import '@/styles/globals.scss'
 import { ContextWrapper } from '@/context'
 import { Footer } from '@/Components/Footer'
 import { ChatWidget } from '@/Components/MaterialZ/ChatWidget'
-import { CartMenu } from '@/Components/CartMenu'
 import Header from '@/Components/Header'
 import Script from 'next/script'
 
@@ -74,7 +73,7 @@ export default function RootLayout({
       <body className={`${rubik.variable} ${pacifico.variable}`}>
         <ContextWrapper>
           <Header/>
-          <CartMenu/>
+          {/* <CartMenu/> */}
           {children}
           <ChatWidget/>
           <Footer/>

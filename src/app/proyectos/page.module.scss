@@ -1,0 +1,33 @@
+.page {
+    .gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        max-width: 1280px;
+        margin: auto;
+        gap: .5rem;
+        overflow: hidden;
+        border-radius: .5rem;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+        >div {
+            position: relative;
+            aspect-ratio: 1;
+            img {
+                object-position: center;
+                object-fit: cover;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:500px) {
+    .page {
+        .gallery {
+            margin: .2rem;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+            grid-template-columns: 1fr 1fr;
+            gap: .2rem;
+        }
+    }
+}

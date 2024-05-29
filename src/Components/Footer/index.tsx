@@ -23,28 +23,19 @@ export const Footer:FC<Props> = () => {
                     </p>
                 </div>
                 <nav>
-                    <h2>Nuestros Servicios</h2>
+                    <h2>Nuestra Web</h2>
                     <ul>
                         <li>
-                            <Link href={'/servicios/publicidad_impresa'}>Publicidad Impresa</Link>
+                            <Link href={'/'}>Inicio</Link>
                         </li>
                         <li>
-                            <Link href={'/servicios/papelería_comercial'}>Papelería Comercial</Link>
+                            <Link href={'/proyectos'}>Proyectos</Link>
                         </li>
                         <li>
-                            <Link href={'/servicios/impresion_laser'}>Impresión Laser</Link>
+                            <Link href={'/preguntas-frecuentes'}>Preguntas Frecuentes</Link>
                         </li>
                         <li>
-                            <Link href={'/servicios/publicidad_exterior'}>Publicidad Exterior</Link>
-                        </li>
-                        <li>
-                            <Link href={'/servicios/gran_formato'}>Gran Formato</Link>
-                        </li>
-                        <li>
-                            <Link href={'/servicios/souvenirs_publicitarios'}>Souvenirs Publicitarios</Link>
-                        </li>
-                        <li>
-                            <Link href={'/servicios/diseño_grafico'}>Diseño Gráfico</Link>
+                            <Link href={'/contacto'}>Contacto</Link>
                         </li>
                     </ul>
                 </nav>

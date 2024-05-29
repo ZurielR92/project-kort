@@ -72,7 +72,7 @@ const Header:FC<Props> = () => {
             <div
             >
                 <Link href={'/'} aria-label='Inicio Agencia Kubica'>
-                    <Image alt='' priority src={'/logo-kort.png'} width={86} height={50}/>
+                    <Image alt='' priority src={'/logo-kbk-dark.png'} width={100} height={50}/>
                 </Link>
             </div>
 
@@ -140,12 +140,12 @@ const Header:FC<Props> = () => {
             <div className={`${styles["contenedor"]} ${styles['contenedor-enlaces-nav']} ${ isShowMenu && styles.activo }`}>
 
 
-                <div 
+                {/* <div 
                     onClick={ showServices }
                     className={`${styles['btn-departamentos']}`}
                     id="btn-departamentos">
                         <p>Todos Nuestros <span>SERVICIOS</span></p>
-                </div>
+                </div> */}
 
                 {/* <div className={styles['separador-logo']}></div> */}
 
@@ -154,20 +154,33 @@ const Header:FC<Props> = () => {
 
                     <li>
                         <Link onClick={ handleToggleMenu } href={'/'}>
-                                Inicio
+                            Inicio
+                        </Link>
+                    </li>
+
+                    {/* <li>
+                        <Link onClick={ handleToggleMenu } href={'/conocenos'}>
+                            Conócenos
+                        </Link>
+                    </li> */}
+
+                    <li>
+                        <Link onClick={ handleToggleMenu } href={'/proyectos'}>
+                            Proyectos
                         </Link>
                     </li>
                     
-                    <li className={ styles.desktop }>
+                    {/* <li className={ styles.desktop }>
                         <span onMouseEnter={ showServices }>
                             Servicios
                             <SimpleDownArrow fill='white' style={{ marginLeft:'5px' }} width={ 10 }/>
                         </span>
-                    </li>
-                    
+                    </li> */}
+                
+
                     <li>
-                        <Link onClick={ handleToggleMenu } href={'/conocenos'}>
-                            Conócenos
+                        <Link onClick={ handleToggleMenu } href={'/preguntas-frecuentes'}>
+                            Preguntas Frecuentes
                         </Link>
                     </li>
                     
@@ -542,9 +555,9 @@ const Header:FC<Props> = () => {
             </div>
         </nav>
 
-        <div onClick={ toggleCart } className={ styles.cart }>
+        {/* <div onClick={ toggleCart } className={ styles.cart }>
             <CartIcon width={30} fill='#fff'/>
-        </div>
+        </div> */}
     </header>
 
   )

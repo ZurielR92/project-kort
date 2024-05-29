@@ -1,0 +1,25 @@
+.page {
+    > ul {
+        list-style: none;
+        padding: 1rem;
+        max-width: 1280px;
+        margin: auto;
+        >li {
+            >div {
+                display: flex;
+                align-items: center;
+                gap: .5rem;
+                h2 {
+                    margin: 0;
+                    font-size: 1.3rem;
+                    font-weight: 800;
+                    color: #004b92;
+                }
+            }
+            p {
+                font-size: 1.1rem;
+            }
+
+        }
+    }
+}
