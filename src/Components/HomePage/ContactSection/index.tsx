@@ -36,7 +36,7 @@ export const ContactSection:FC<Props> = () => {
                         <span>Información de contacto</span>
                         <h2>Detalles</h2>
                         <strong>Dirección:</strong>
-                        <p>Carrera 53 # 3 Sur - 89 Local 04 Mall el Rodeo</p>
+                        <p>Carrera 52 # 3 Sur - 89 Local 04 Mall el Rodeo</p>
                         <strong>Teléfono:</strong>
                         <p>+57 {vendor}</p>
                         <strong>Correo Electrónico</strong>
