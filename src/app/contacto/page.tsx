@@ -12,6 +12,7 @@ const ContactoPage = () => {
             
             <Section colorClipTop={ 'light' } colorClipBottom='resalt'>
                 <Map/>
+                
             </Section>
 
         <ContactSection/>
